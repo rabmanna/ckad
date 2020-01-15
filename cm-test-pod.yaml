@@ -6,7 +6,7 @@ spec:
   containers:
   - name: test1
     image: cirros
-    command: ["/bin/sh", "-c", "env"]
+    command: ["/bin/sh", "-c", "env"]             # container will run with this command when started 
     envFrom:
-      - configMapRef:
+      - configMapRef:                             # test1 POD refers to ConfigMap for a ENV Variable named 'variable'
           name: variables
