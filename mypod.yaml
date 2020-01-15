@@ -5,10 +5,10 @@ metadata:
   namespace: default
 spec:
   containers:
-  - name: busybox
+  - name: busybox                     #Container1 : busybox
     image: busybox
     command:
       - sleep
       - "3600" 
-  - name: nginx
+  - name: nginx                       #Container2 : nginx
     image: nginx
