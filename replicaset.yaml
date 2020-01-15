@@ -1,18 +1,18 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: ReplicaSet              # RS creates replica of Pods # Assume Deployment is not created ! try out 
 metadata:
   name: rsdemo
 spec:
   replicas: 2
   selector:
-    matchLabels:
+    matchLabels:              # matchLabels this keyword is needed for RS 
       app: myapp
-  template:
+  template:                   # pod template 
     metadata:
-      name: nginxrs
+      name: nginxrs           # pod name ?
       labels:
-        app: myapp
+        app: myapp            # pod label
     spec:
-      containers:
+      containers:             # pod's container
       - name: nginx
         image: nginx
