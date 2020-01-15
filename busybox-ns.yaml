@@ -6,6 +6,6 @@ spec:
   containers:
   - image: busybox
     name: busy
-    command: 
+    command:              # takes command to run , passed as list # also possible command: ["", "", ] format
       - sleep
       - "3600"
