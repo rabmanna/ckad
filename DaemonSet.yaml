@@ -1,12 +1,12 @@
 apiversion: apps/v1
-kind: DaemonSet
+kind: DaemonSet                     # DS controller ensures POD runs in all nodes of the cluster
 metadata:
   name: multi-nginx
 spec:
-  template:
+  template:                         # POD template
     metadata:
       labels:
-        system: DaemonSetOne
+        system: DaemonSetOne        # label of the POD 
     spec:
        containers:
        - name: nginx
