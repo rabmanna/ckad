@@ -5,6 +5,6 @@ metadata:
   namespace: default
 spec:
   containers:
-  - name: httpd
+  - name: httpd             # This is apache POD
     image: httpd
 
