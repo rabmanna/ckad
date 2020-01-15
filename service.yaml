@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: mywebserver
 spec:
-  selector:
+  selector:                 # mention a label in selector to identify PODs
     run: nginx
   ports:
   - port: 80
     name: whatever
-  type: NodePort
+  type: NodePort            # type of service
