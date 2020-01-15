@@ -3,15 +3,15 @@ kind: CronJob
 metadata: 
   name: hello
 spec:
-  schedule: "*/1 * * * *"
+  schedule: "*/1 * * * *"         # When to do the task
   jobTemplate:
     spec:
-      template:
+      template:                   # POD Template
         spec:
           containers:
           - name: hello
             image: busybox
-            args:
+            args:                 # task
             - /bin/sh
             - -c
             - date; echo hello from the K8s cluster
