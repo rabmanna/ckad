@@ -10,5 +10,5 @@ spec:
     command:
       - sleep
       - "3600" 
-  nodeselector:
-    disktype: hdd
+  nodeselector:               # Schedule a POD into a node which has label disktype=hdd
+    disktype: hdd 
