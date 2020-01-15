@@ -6,8 +6,8 @@ spec:
   containers:
   - name: sleep-container
     image: alpine
-    command: ["/bin/sh"]
+    command: ["/bin/sh"]                                # POD which prints date and sleeps for 5 sec and loops
     args: ["-c", "while true; do date; sleep 5; done"]
     env:
-    - name: BASE_URL
+    - name: BASE_URL                                    # sets env value for BASE_URL 
       value: "https://sleepy.example.com"  
