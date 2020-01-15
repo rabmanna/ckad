@@ -1,5 +1,5 @@
 #!/bin/bash
-# Fedora 31 WS
+# Fedora 31 WS # CKAD
 egrep '^flags.*(vmx|svm)' /proc/cpuinfo || (echo enable CPU virtualization support and try again && exit 9)
 
 dnf clean all
