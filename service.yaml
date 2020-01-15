@@ -8,4 +8,4 @@ spec:
   ports:
   - port: 80
     name: whatever
-  type: NodePort            # type of service
+  type: NodePort            # type of service NodePort
