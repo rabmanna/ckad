@@ -8,12 +8,12 @@ spec:
   containers:
   - name: nginx-probes
     image: nginx
-    readinessProbe:
+    readinessProbe:                           # probe readinessProbe defined for POD's container
       tcpSocket:
         port: 80
       initialDelaySeconds: 5
       periodSeconds: 10
-    livenessProbe:
+    livenessProbe:                            # probe livenessProbe defined for POD's container
       tcpSocket:
         port: 80
       initialDelaySeconds: 20
