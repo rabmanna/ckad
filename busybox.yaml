@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: busybox2
-  namespace: default
+  namespace: default                      # NS default
 spec:
   containers:
   - name: busy
