@@ -3,7 +3,7 @@ kind: Job
 metadata:
   name: simple-job
 spec:
-  template:
+  template:                 # POD template
     spec:
       containers:
       - name: sleepy
