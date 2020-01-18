@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v1             #Deploy with Rolling update policy applied
 kind: Deployment
 metadata:
   name: rolling-nginx
