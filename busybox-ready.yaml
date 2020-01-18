@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v1              # POD with readiness probe
 kind: Pod
 metadata:
   name: busybox-ready
