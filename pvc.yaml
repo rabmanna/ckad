@@ -1,4 +1,4 @@
-kind: PersistentVolumeClaim
+kind: PersistentVolumeClaim     # PVC defines what capacity is to be claimed and mode
 apiVersion: v1
 metadata:
   name: pv-claim
