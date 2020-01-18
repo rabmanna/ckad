@@ -1,4 +1,4 @@
-kind: PersistentVolume
+kind: PersistentVolume   # PV defined how much is Capacity and how access to PV can be made
 apiVersion: v1
 metadata:
   name: pv-volume
