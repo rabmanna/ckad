@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v1              # POD's Volume used by its containers
 kind: Pod
 metadata:
   name: busyboxab
