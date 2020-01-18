@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v1            # pod volume example
 kind: Pod
 metadata:
   name: vol2
