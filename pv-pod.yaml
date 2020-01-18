@@ -1,4 +1,4 @@
-kind: Pod
+kind: Pod                        # POD uses PVC
 apiVersion: v1
 metadata:
    name: pv-pod
